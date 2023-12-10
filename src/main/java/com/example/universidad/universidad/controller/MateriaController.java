@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.universidad.universidad.entity.Docente;
 import com.example.universidad.universidad.entity.Materia;
 import com.example.universidad.universidad.service.MateriaService;
 
