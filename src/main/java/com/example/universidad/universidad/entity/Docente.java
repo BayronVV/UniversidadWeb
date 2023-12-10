@@ -25,7 +25,7 @@ public class Docente {
 	 private String nombre;
 	 private String apellido;
 	 private String direccion;
-	 @OneToMany 
+	 @OneToMany(mappedBy="docente") 
 	 private List<Materia>materias;
 
 }
