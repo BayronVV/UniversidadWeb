@@ -6,7 +6,7 @@ import com.example.universidad.universidad.entity.Materia;
 
 public interface MateriaService {
 	
-    List<Materia>findDocentes();
+    List<Materia>findMaterias();
 	
     Materia createMateria(Materia materia);
     Materia updateMateria(Materia materia);
