@@ -53,4 +53,12 @@ public class DocenteServiceImpl implements DocenteService {
 		
 	}
 
+	@Override
+	public Docente getDocente(Integer idDocente) {
+		// TODO Auto-generated method stub
+		Docente docente = docenteRepository.findById(idDocente)
+				.orElseThrow();
+		return docente;
+	}
+
 }

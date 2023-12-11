@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.universidad.universidad.dto.MateriaDTO;
 import com.example.universidad.universidad.entity.Materia;
 import com.example.universidad.universidad.service.MateriaService;
 
@@ -31,7 +32,7 @@ public List<Materia> findMaterias (){
 	}
 	
 	@PostMapping
-	public Materia crearMateria(@RequestBody Materia materia) {
+	public Materia crearMateria(@RequestBody MateriaDTO materia) {
 		
 		return materiaService.createMateria(materia);
 	}

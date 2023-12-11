@@ -28,6 +28,12 @@ public class DocenteController {
 		return docenteService.findDocentes();
 	}
 	
+	@GetMapping("/{idDocente}")
+	public Docente getDocente(@PathVariable Integer idDocente ) {
+		 
+		 return docenteService.getDocente(idDocente);
+	 }
+	
 @PostMapping
 public Docente crearDocente(@RequestBody Docente docente) {
 	
